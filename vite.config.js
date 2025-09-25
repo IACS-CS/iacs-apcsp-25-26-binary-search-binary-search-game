@@ -8,5 +8,5 @@ export default defineConfig({
   server: {
     host: '0.0.0.0'
   },
-  base: "./"
+  base: process.env.NODE_ENV === 'production' ? '/iacs-apcsp-25-26-binary-search-binary-search-game/' : './'
 });
